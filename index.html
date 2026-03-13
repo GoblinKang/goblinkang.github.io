@@ -1,103 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Joseph Fonck | Game Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Fonck | Game Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
 
-<style>
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #111827;
+    }
 
-body{
-font-family: Arial;
-background:#111;
-color:white;
-margin:0;
-}
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-header{
-background:#1a1a1a;
-padding:40px;
-text-align:center;
-}
+    header p {
+      margin-top: 10px;
+      color: #93c5fd;
+      font-size: 1.1rem;
+    }
 
-section{
-max-width:900px;
-margin:auto;
-padding:40px;
-}
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
 
-.project{
-background:#222;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-}
+    section {
+      margin-bottom: 50px;
+    }
 
-a{
-color:#4da3ff;
-}
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
 
-</style>
+    .about-box,
+    .project-card,
+    .contact-box,
+    .resume-box {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 24px;
+    }
 
+    .projects {
+      display: grid;
+      gap: 20px;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .skills {
+      margin-top: 14px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .resume-entry {
+      margin-bottom: 22px;
+    }
+
+    .resume-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .resume-entry h3 {
+      margin: 0 0 6px 0;
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+
+    .resume-entry p {
+      margin: 4px 0;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .note {
+      color: #94a3b8;
+      font-style: italic;
+      margin-top: 10px;
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>Joseph Fonck</h1>
+    <p>Game Developer | Unreal Engine | C++ | Gameplay Programming</p>
+  </header>
 
-<header>
-<h1>Joseph Fonck</h1>
-<p>Game Developer | Unreal Engine | C++</p>
-</header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <div class="about-box">
+        <p>
+          I am a Game Development student at Full Sail University focused on gameplay programming,
+          AI systems, and Unreal Engine development. I enjoy building interactive systems,
+          solving technical problems, and continuing to improve through both coursework and personal projects.
+        </p>
+      </div>
+    </section>
 
-<section>
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Breach Point</h3>
+          <p>
+            Breach Point is a dungeon crawler project developed in Unreal Engine with a focus on procedural gameplay,
+            enemy AI behavior, and core combat systems.
+          </p>
+          <div class="skills">
+            <strong>Skills:</strong> Unreal Engine, C++, Gameplay Programming, Artificial Intelligence, Debugging
+          </div>
+        </div>
 
-<h2>About Me</h2>
+        <div class="project-card">
+          <h3>Delivery Detonation</h3>
+          <p>
+            Delivery Detonation is a fast-paced, movement-driven delivery game developed in Unreal Engine,
+            focused on gameplay systems, interactive objectives, and player movement mechanics.
+          </p>
+          <div class="skills">
+            <strong>Skills:</strong> Unreal Engine, C++, Blueprints, Gameplay Programming, UI
+          </div>
+        </div>
+      </div>
+      <p class="note">More projects coming soon.</p>
+    </section>
 
-<p>
-Game Development student at Full Sail University focused on gameplay programming,
-AI systems, and Unreal Engine development.
-</p>
+    <section>
+      <h2>Résumé / Experience</h2>
+      <div class="resume-box">
+        <div class="resume-entry">
+          <h3>Technical Skills</h3>
+          <p>C++, C#, Python, Java, Unreal Engine, Unity, Git, Perforce, Visual Studio</p>
+        </div>
 
-</section>
+        <div class="resume-entry">
+          <h3>Liberty Rock Tavern — Bartender</h3>
+          <p>January 2025 – March 2026</p>
+          <ul>
+            <li>Provided high-quality customer service in a fast-paced environment.</li>
+            <li>Managed multiple responsibilities including bartending and food preparation.</li>
+          </ul>
+        </div>
 
-<section>
+        <div class="resume-entry">
+          <h3>Archie Moore’s — Server</h3>
+          <p>January 2024 – August 2026</p>
+          <ul>
+            <li>Delivered attentive customer service in a high-volume restaurant environment.</li>
+            <li>Collaborated with kitchen and service staff to maintain efficient operations.</li>
+          </ul>
+        </div>
 
-<h2>Projects</h2>
+        <div class="resume-entry">
+          <h3>Bozzuto's Inc — Inventory Management</h3>
+          <p>June 2019 – July 2020</p>
+          <ul>
+            <li>Managed inventory tracking and stock control.</li>
+            <li>Supervised and coordinated a team of 10 inventory clerks.</li>
+          </ul>
+        </div>
 
-<div class="project">
+        <div class="resume-entry">
+          <h3>Education</h3>
+          <p><strong>Full Sail University</strong> — Bachelor of Science in Game Development (Currently Pursuing)</p>
+          <p><strong>Platt Technical High School</strong> — Manufacturing and Engineering</p>
+        </div>
+      </div>
+    </section>
 
-<h3>Breach Point</h3>
-
-<p>
-Dungeon crawler project built in Unreal Engine featuring procedural gameplay
-systems and enemy AI behaviors.
-</p>
-
-<p><b>Skills:</b> Unreal Engine, C++, Gameplay Programming, AI</p>
-
-</div>
-
-<div class="project">
-
-<h3>Delivery Detonation</h3>
-
-<p>
-Fast-paced movement driven delivery game developed in Unreal Engine focusing on
-gameplay systems and player movement mechanics.
-</p>
-
-<p><b>Skills:</b> Unreal Engine, C++, Blueprints, Gameplay Programming</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Contact</h2>
-
-<p>
-Email: joseph.fonck00@gmail.com
-</p>
-
-</section>
-
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p>Email: <a href="mailto:joseph.fonck00@gmail.com">joseph.fonck00@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/joseph-fonck-460121343/" target="_blank">joseph-fonck-460121343</a></p>
+        <p>GitHub: <a href="https://github.com/GoblinKang" target="_blank">GoblinKang</a></p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
